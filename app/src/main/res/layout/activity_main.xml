@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="日" />
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="一" />
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="二" />
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="三" />
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="四 " />
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="五 " />
+
+        <TextView
+            style="@style/Month_Title_Style"
+            android:text="六 " />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
